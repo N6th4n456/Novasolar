@@ -1,0 +1,522 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Layout */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header elegante fijo */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8rem;
+  background: rgba(205, 206, 206, 0.9); /* fondo oscuro semitransparente */
+  backdrop-filter: blur(6px);       /* desenfoque elegante */
+  z-index: 1000;
+  padding: 5rem 8;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  color: #304d9c;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ffca28;
+}
+
+/* Para compensar el header fijo en el body */
+body {
+  padding-top: 80px;
+}
+  
+  /* Hero */
+
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    background: #ffca28;
+    padding: 0.8rem 1.5rem;
+    color: black;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+  
+  /* Sections */
+  /* Sección Tienda */
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.producto {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px #5f5a4a;
+}
+
+.producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.producto p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.precio {
+  display: block;
+  font-size: 1.2rem;
+  color: #004d40;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.btn-tienda {
+  background-color: #ffca28;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-tienda:hover {
+  background-color: #cccccc;
+}
+
+
+  .section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+.producto {
+  position: relative;
+}
+
+
+/* Estilo botón deshabilitado */
+.btn-tienda:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #666;
+}
+  
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .card:hover{
+   background:#ffca28;
+   color: #ffffff;
+  }
+  .galeria-mas-trabajos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding-top: 1rem;
+  }
+  
+  .trabajo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trabajo-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  .galeria-mas-trabajos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .trabajo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .trabajo-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #e9b417;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+  }
+
+  .social-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 2.5rem;
+    transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #7274da;
+  }
+  
+  .carousel-section {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: 400px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* Carrusel base (ya incluido antes) */
+.carousel-section {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: 400px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: fade 1s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#lluvia-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.logo-drop {
+  position: absolute;
+  top: -50px;
+  width: 100px;
+  height: 100px;
+  background-image: url('img/logo.png'); /* Reemplaza con tu logo */
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: caer 20s linear infinite;
+  opacity: 80%;
+}
+
+@keyframes caer {
+  to {
+    transform: translateY(50vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Animación de desvanecimiento */
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Botones navegación */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.9rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 30%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Texto superpuesto */
+.caption {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  animation: slideIn 1s ease-out;
+}
+
+.caption h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.caption p {
+  font-size: 1rem;
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    height: 220px;
+  }
+
+  .carousel-section {
+    height: 250px;
+  }
+  .caption {
+    bottom: 10%;
+    left: 5%;
+    padding: 1rem;
+  }
+  .caption h2 {
+    font-size: 1.2rem;
+  }
+  .caption p {
+    font-size: 0.9rem;
+  }
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #0df053;
+    color: #ffffff;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+/* Opcional: responsive para el carrusel */
+@media (max-width: 768px) {
+
+  .header {
+    height: 150px;
+  }
+
+  .nav ul {
+    font-size: 20px;
+    margin: -40px;
+  }
+  .logo img {
+    margin: -15px;
+    height: 150px;
+    width: 150px;
+  }
+  .carousel-section {
+    height: 400px;
+  }
+
+  .prev, .next {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+  }
+}
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .servicios {
+      flex-direction: column;
+    }
+
+    .nav {
+      margin-top: 1rem;
+    }
+    .grid {
+      flex-direction: column;
+    }
+  
+    .hero-content h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SolEnergia - Energía Solar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo"><img src="img/logo.png" alt=""></h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#tienda">Tienda</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<br><br>
+  <section class="carousel-section">
+    <div class="carousel" id="carousel">
+      <div class="slide active">
+        <img src="img/header 4.jpg" alt="Paneles solares 1">
+        <div class="caption">
+          <h2>Soluciones solares a tu medida</h2>
+          <p>Disfruta del confort, sin preocupaciones.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/header 2.jpg" alt="Paneles solares 2">
+        <div class="caption">
+          <h2>Energía limpia para todos</h2>
+          <p>Instalación segura, rápida y con garantía.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/header 3.jpg" alt="Paneles solares 3">
+        <div class="caption">
+          <h2>Montajes Seguros</h2>
+          <p>Confía en expertos en sistemas fotovoltaicos.</p>
+        </div> 
+      </div>
+      <div class="slide">
+        <img src="img/header 1.jpg" alt="Paneles solares 3">
+        <div class="caption">
+          <h2>Montajes Personalizados</h2>
+          <p>Cumpliendo con sus preferencias</p>
+        </div> 
+      </div>
+
+      <button class="prev" onclick="prevSlide()">❮</button>
+      <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+  </section>
+
+
+
+
+  <section id="tienda" class="section bg-light">
+    <h2>Productos en Venta</h2>
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="img/pro 1.png" alt="Kit Solar Básico">
+        <h3>Conector MC4</h3>
+        <p>Para conectar los Paneles.</p>
+        <span class="precio">$5</span>
+        <button class="btn-tienda">Contactar</button>
+      </div>
+      <div class="producto">
+        <img src="img/pro 2.png" alt="Inversor Solar 3KW">
+        <h3>Panel 550KW</h3>
+        <p>Alta eficiencia para sistemas residenciales o comerciales.</p>
+        <span class="precio">$280</span>
+        <button class="btn-tienda">Contactar</button>
+      </div>
+      <div class="producto">
+        <img src="img/pro 3.png" alt="Batería de Litio 5KWh">
+        <h3>Generador Bluetti</h3>
+        <p>Larga duración y gran capacidad para energía almacenada.</p>
+        <span class="precio">$1000</span>
+        <button class="btn-tienda">Contactar</button>
+      </div>
+      <div class="producto">
+        <img src="img/pro 4.png" alt="Batería de Litio 5KWh">
+        <h3>Generador Delta 2</h3>
+        <p>Larga duración y gran capacidad para energía almacenada.</p>
+        <span class="precio">$1000</span>
+        <button class="btn-tienda">Contactar</button>
+      </div>
+     
+    
+    </div>
+  
+
+  <section id="servicios" class="section">
+    <h2>Nuestros Servicios</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Instalación</h3>
+        <p>Montaje profesional de paneles solares con garantía.</p>
+      </div>
+      <div class="card">
+        <h3>Mantenimiento</h3>
+        <p>Limpieza, diagnóstico y revisión del sistema fotovoltaico.</p>
+      </div>
+      <div class="card">
+        <h3>Asesoría</h3>
+        <p>Evaluación técnica y financiera para tu proyecto solar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="section bg-light">
+    <h2>¿Quiénes Somos?</h2>
+    <p>Somos una empresa especializada en la instalación y montaje de sistemas de paneles solares, 
+      comprometida con brindar soluciones energéticas, eficientes y sostenibles. 
+      Nos enfocamos en diseñar e implementar sistemas fotovoltaicos adaptados a las necesidades de cada cliente,
+       ya sea residencial, comercial o industrial.</p>
+  </section>
+
+</section>
+<section class="section" id="mas-trabajos">
+  <div class="container">
+    <h2 style="text-align: center;">Trabajos Realizados</h2>
+    <div class="galeria-mas-trabajos">
+      <div class="trabajo-item">
+        <img src="img/tra 1.jpg" alt="Trabajo 5" onclick="abrirLightbox(this.src)">
+      </div>
+      <div class="trabajo-item">
+        <img src="img/tra 2.jpg" alt="Trabajo 7" onclick="abrirLightbox(this.src)">
+      </div>
+      <div class="trabajo-item">
+        <img src="img/tra 3.jpg" alt="Trabajo 7" onclick="abrirLightbox(this.src)">
+      </div>
+      
+      <div class="trabajo-item">
+        <img src="img/tra 4.jpg" alt="Trabajo 7" onclick="abrirLightbox(this.src)">
+      </div>
+       <div class="trabajo-item">
+        <img src="img/tra 5.jpg" alt="Trabajo 7" onclick="abrirLightbox(this.src)">
+      </div>
+      <div class="trabajo-item">
+        <img src="img/tra 6.jpg" alt="Trabajo 7" onclick="abrirLightbox(this.src)">
+      </div>
+
+      
+      
+    </div>
+  </div>
+
+</section><div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+  <img id="lightbox-img" src="" alt="Imagen Ampliada">
+</div>
+  
+
+
+<a href="+53 5 6003590" class="btn-wsp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Nova Solar. Todos los derechos reservados.</p>
+        <div class="social-icons">
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="novasolarcu@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>         
+        </div>
+      </div>
+
+      <div id="lluvia-logo"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
